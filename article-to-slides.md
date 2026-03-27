@@ -393,9 +393,11 @@ node /tmp/slides-screenshot/screenshot.js "file://{html_absolute_path}" "{output
 
 ---
 
-## 安装
+## 下载
 
 ```bash
-curl -o ~/.claude/skills/article-to-slides.md \
-  https://raw.githubusercontent.com/sunyuzheng/xhs-article-slides/main/article-to-slides.md
+curl -O https://raw.githubusercontent.com/sunyuzheng/xhs-article-slides/main/article-to-slides.md
 ```
+
+- **Claude Code**：`mv article-to-slides.md ~/.claude/skills/` → 用 `/article-to-slides` 调用
+- **其他**：直接将文件内容作为 system prompt 粘贴到任意 LLM 对话

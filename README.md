@@ -19,18 +19,20 @@
 
 ---
 
-## 安装
+## 下载
 
 ```bash
-curl -o ~/.claude/skills/article-to-slides.md \
-  https://raw.githubusercontent.com/sunyuzheng/xhs-article-slides/main/article-to-slides.md
+curl -O https://raw.githubusercontent.com/sunyuzheng/xhs-article-slides/main/article-to-slides.md
 ```
 
-安装后在 Claude Code 任意项目中输入：
+下载后根据你的使用方式放置：
 
-```
-/article-to-slides
-```
+| 使用场景 | 操作 |
+|----------|------|
+| **Claude Code skill**（推荐） | `mv article-to-slides.md ~/.claude/skills/` 然后用 `/article-to-slides` 调用 |
+| **粘贴到对话** | 直接把文件内容复制进任意 Claude / GPT 对话框作为 system prompt |
+| **CLAUDE.md / cursor rules** | 追加到项目根目录的 `CLAUDE.md` 或 `.cursorrules` |
+| **API system prompt** | 作为 system message 传入任意兼容 API |
 
 ---
 
