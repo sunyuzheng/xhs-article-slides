@@ -1,6 +1,8 @@
 # article-to-slides
 
-**Claude Code skill** — 将长文章转换为小红书「网页截图风」幻灯片，自动输出高清 PNG。
+**Claude Code skill（Superlinear Academy 专属版）** — 将文章转换为小红书「网页截图风」幻灯片，自动输出高清 PNG。
+
+品牌信息（logo、网站 URL、引流文案）已内置，调用时只需提供文章内容，无需重复配置。
 
 ---
 
@@ -35,11 +37,11 @@ curl -o ~/.claude/skills/article-to-slides.md \
 ## 使用流程
 
 1. 运行 `/article-to-slides`
-2. Claude 会询问：
+2. Claude 只会询问：
    - 文章内容（URL 或直接粘贴全文）
-   - 品牌 logo 路径（本地图片）
-   - 品牌网站 URL（用于 address bar 和 footer）
-   - 输出目录
+   - 文章路径（如 `/c/ai-resources/my-article`，可从 URL 自动解析）
+   - 输出目录（可选，默认 `~/Desktop/slides-png/`）
+   - **品牌 logo、网站 URL、引流文案均已内置，不会重复询问**
 3. Claude 自动：
    - 解析文章结构，规划 10–16 张幻灯片
    - 生成 `slides.html`（完整设计系统）
