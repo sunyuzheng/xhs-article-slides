@@ -23,13 +23,13 @@ description: 将 Superlinear Academy 文章转换为小红书「网页截图风�
 |--------|----|
 | 品牌名 | Superlinear Academy / Superlinear AI |
 | 网站 URL | `superlinear.academy` |
-| Logo 路径 | `/Users/sunyuzheng/Desktop/superlinear/Superlinear_Academy_Logo_Lockups_2026_V1.0/Sub-Superlinear_AI/1_方形Vertical/Black/Web/SubBrand-Vertical_Black_NoBgd.png` |
+| Logo 路径 | `/Users/sunyuzheng/Desktop/superlinear/Superlinear_Academy_Logo_Lockups_2026_V1.0/Main-Superlinear_Academy/1_Primary_左对齐最常用/Black/Web/Primary_Black_NoBgd_RGBx72.png` |
 | Address bar | `superlinear.academy{article_path}` |
-| Footer 引流文案 | `完整文章及深度讨论见 superlinear.academy — 下载 App 加入社区` |
+| Footer 引流文案 | `应用商店搜索 Superlinear Academy · 加入 AI 先行者社区` |
 | 深色 header/footer logo | 加 `style="filter:invert(1)"` |
 | 浅色 header/footer logo | 正常使用 |
 
-> **Logo 找不到时**：用 `find /Users/sunyuzheng/Desktop/superlinear -name "SubBrand-Vertical_Black_NoBgd.png" 2>/dev/null | head -1` 找到最新路径。
+> **Logo 找不到时**：用 `find /Users/sunyuzheng/Desktop/superlinear -name "Primary_Black_NoBgd_RGBx72.png" 2>/dev/null | head -1` 找到最新路径。
 
 ---
 
@@ -63,7 +63,7 @@ description: 将 Superlinear Academy 文章转换为小红书「网页截图风�
 | **案例** | 每个案例一张（绿点来源标注 + 标题 + 逻辑框 + 角色列表） |
 | **原则/框架** | 每个原则一张（大背景数字 + 标题 + 正文 + 组件） |
 | **行动建议** | 编号列表，每条含标题 + 说明 |
-| **结语 (Closing)** | 浅灰背景，大字金句（下划线强调）+ 引流 CTA 黑框 |
+| **结语 (Closing)** | 浅灰背景，大字金句（下划线强调）+ 引流 CTA 黑框。CTA 标题固定用「Superlinear Academy，AI 先行者的赛博风水宝地」，正文引导在 App Store / Google Play 搜索下载，**不贴外部链接**（小红书限流）|
 
 **内容原则**：
 - 正文是主角，不要过度使用「强调块」
@@ -92,7 +92,7 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 48px;
-  font-family: 'Noto Sans SC', 'Inter', -apple-system, sans-serif;
+  font-family: 'PingFang SC', 'Noto Sans SC', 'Inter', -apple-system, sans-serif;
 }
 .slide-label {
   font-family: 'Inter', sans-serif;
@@ -126,19 +126,19 @@ body {
 .urlbar .lk { font-size: 11px; opacity: 0.55; }
 
 /* ── Site Header ── */
-.sh { background: #fff; border-bottom: 1px solid #EAEAEA; padding: 15px 36px; display: flex; align-items: center; justify-content: space-between; flex-shrink: 0; height: 72px; }
+.sh { background: #fff; border-bottom: 1px solid #EAEAEA; padding: 14px 36px; display: flex; align-items: center; justify-content: space-between; flex-shrink: 0; height: 84px; }
 .sh.dk { background: #0F0F0F; border-bottom: 1px solid #1E1E1E; }
-.logo { height: 52px; object-fit: contain; }
+.logo { height: 56px; object-fit: contain; }
 .bc { font-size: 11px; color: #BBBBBB; font-family: 'Inter', sans-serif; }
 .bc b { color: #555; font-weight: 600; }
-.sh.dk .bc b { color: #777; }
+.sh.dk .bc b { color: #999; }
 
 /* ── Site Footer ── */
 .sf { background: #F4F4F4; border-top: 1px solid #E8E8E8; padding: 13px 36px; display: flex; align-items: center; justify-content: space-between; flex-shrink: 0; height: 68px; }
 .sf.dk { background: #090909; border-top: 1px solid #1A1A1A; }
 .sfurl { font-size: 12px; color: #999; font-family: 'Inter', sans-serif; }
-.sf.dk .sfurl { color: #555; }
-.sflogo { height: 30px; object-fit: contain; opacity: 0.65; }
+.sf.dk .sfurl { color: #888; }
+.sflogo { height: 36px; object-fit: contain; opacity: 0.65; }
 .sf.dk .sflogo { filter: invert(1); opacity: 0.3; }
 
 .content { flex: 1; overflow: hidden; }
@@ -151,7 +151,7 @@ body {
 .ph1 sub { font-size: 20px; color: #AAA; font-weight: 400; display: block; letter-spacing: 0; vertical-align: baseline; margin-bottom: 6px; }
 
 /* ── Body text (主角) ── */
-.pbody { font-size: 19px; line-height: 1.85; color: #333; }
+.pbody { font-size: 21px; line-height: 1.85; color: #333; }
 .pbody p + p { margin-top: 18px; }
 .pbody strong { font-weight: 700; color: #0A0A0A; }
 .dv { width: 100%; height: 1px; background: #EAEAEA; margin: 20px 0; }
@@ -159,18 +159,18 @@ body {
 /* ── Logic box: 左边黑线 + 浅灰底 ── */
 .lbox { background: #F6F6F6; border-left: 4px solid #000; border-radius: 0 10px 10px 0; padding: 22px 28px; margin-bottom: 16px; }
 .lbox .lbl { font-size: 10px; font-family: 'Inter', sans-serif; letter-spacing: 2px; text-transform: uppercase; color: #AAAAAA; margin-bottom: 8px; }
-.lbox .txt { font-size: 18px; line-height: 1.75; color: #1A1A1A; }
+.lbox .txt { font-size: 21px; line-height: 1.75; color: #1A1A1A; }
 .lbox .txt strong { color: #000; font-weight: 800; }
 
 /* ── Quote box ── */
 .qbox { border-left: 4px solid #000; padding: 18px 24px; background: #F7F7F7; border-radius: 0 8px 8px 0; margin-top: 18px; }
-.qt { font-size: 19px; line-height: 1.72; color: #1A1A1A; font-style: italic; }
+.qt { font-size: 21px; line-height: 1.72; color: #1A1A1A; font-style: italic; }
 .qs { font-size: 12px; color: #AAA; margin-top: 8px; font-style: normal; font-family: 'Inter', sans-serif; }
 
 /* ── TLDR rows ── */
 .tlist { display: flex; flex-direction: column; gap: 12px; margin-top: 4px; }
 .trow { display: flex; align-items: stretch; background: #F6F6F6; border-radius: 8px; overflow: hidden; border-left: 3.5px solid #000; }
-.trow-inner { padding: 17px 22px; font-size: 18px; line-height: 1.65; color: #1A1A1A; }
+.trow-inner { padding: 17px 22px; font-size: 21px; line-height: 1.65; color: #1A1A1A; }
 .trow-inner strong { font-weight: 700; color: #000; }
 
 /* ── Stat grid ── */
@@ -179,8 +179,8 @@ body {
 .sc.blk { background: #000; }
 .sc .sn { font-size: 58px; font-weight: 900; font-family: 'Inter', sans-serif; letter-spacing: -3px; line-height: 1; color: #000; margin-bottom: 8px; }
 .sc.blk .sn { color: #fff; }
-.sc .sl { font-size: 14px; color: #777; line-height: 1.55; }
-.sc.blk .sl { color: rgba(255,255,255,0.5); }
+.sc .sl { font-size: 16px; color: #777; line-height: 1.55; }
+.sc.blk .sl { color: rgba(255,255,255,0.8); }
 .sc .ss { font-size: 11px; color: #CCC; font-family: 'Inter', sans-serif; margin-top: 5px; }
 .sc.blk .ss { color: rgba(255,255,255,0.22); }
 
@@ -193,7 +193,7 @@ body {
 .bcard { border-radius: 12px; padding: 22px 28px; background: #F5F5F5; margin-bottom: 14px; }
 .bn { font-size: 10px; font-family: 'Inter', sans-serif; letter-spacing: 2.5px; text-transform: uppercase; font-weight: 700; color: #BBB; margin-bottom: 8px; }
 .bt { font-size: 20px; font-weight: 800; color: #000; margin-bottom: 10px; }
-.bb { font-size: 17px; line-height: 1.78; color: #444; }
+.bb { font-size: 20px; line-height: 1.78; color: #444; }
 .bb strong { color: #111; font-weight: 600; }
 
 /* ── Case study ── */
@@ -209,7 +209,7 @@ body {
 .rlist { display: flex; flex-direction: column; gap: 10px; }
 .ri { display: grid; grid-template-columns: 150px 1fr; gap: 16px; background: #F5F5F5; border-radius: 8px; padding: 15px 18px; align-items: start; }
 .ri-name { font-size: 13px; font-family: 'Inter', sans-serif; font-weight: 800; color: #000; padding-top: 1px; }
-.ri-desc { font-size: 15.5px; line-height: 1.65; color: #555; }
+.ri-desc { font-size: 18px; line-height: 1.65; color: #444; }
 
 /* ── Principle slide ── */
 .p-bg-num { font-size: 96px; font-weight: 900; font-family: 'Inter', sans-serif; color: #EBEBEB; line-height: 1; letter-spacing: -5px; margin-bottom: -18px; user-select: none; }
@@ -223,7 +223,7 @@ body {
 .cr { border-radius: 10px; padding: 22px 26px; background: #F5F5F5; display: flex; gap: 18px; }
 .cr-n { font-size: 30px; font-weight: 900; font-family: 'Inter', sans-serif; color: #D8D8D8; line-height: 1; width: 34px; flex-shrink: 0; }
 .cr-t { font-size: 17px; font-weight: 700; color: #000; margin-bottom: 5px; }
-.cr-b { font-size: 15.5px; line-height: 1.68; color: #555; }
+.cr-b { font-size: 18px; line-height: 1.68; color: #444; }
 
 /* ── Action steps ── */
 .arows { display: flex; flex-direction: column; gap: 15px; margin-top: 4px; }
@@ -234,18 +234,18 @@ body {
 
 /* ── Cover slide ── */
 .s-cover .content { background: #080808; padding: 56px 72px 48px; display: flex; flex-direction: column; }
-.cover-ey { font-size: 11px; font-family: 'Inter', sans-serif; letter-spacing: 3.5px; text-transform: uppercase; color: #3A3A3A; }
+.cover-ey { font-size: 11px; font-family: 'Inter', sans-serif; letter-spacing: 3.5px; text-transform: uppercase; color: #666; }
 .cover-main { flex: 1; display: flex; flex-direction: column; justify-content: center; }
 .cover-title { font-size: 66px; font-weight: 900; line-height: 1.08; color: #fff; letter-spacing: -2px; margin-bottom: 20px; }
-.cover-sub { font-size: 22px; color: #4A4A4A; font-weight: 400; margin-bottom: 44px; line-height: 1.45; }
+.cover-sub { font-size: 24px; color: #888; font-weight: 400; margin-bottom: 44px; line-height: 1.45; }
 .cover-box { border-left: 3px solid #fff; padding: 24px 30px; background: rgba(255,255,255,0.04); border-radius: 0 10px 10px 0; margin-bottom: 32px; }
-.cover-bt { font-size: 20px; line-height: 1.75; color: #999; }
+.cover-bt { font-size: 22px; line-height: 1.75; color: #CCC; }
 .cover-bt strong { color: #fff; font-weight: 700; }
 .cover-source { display: flex; align-items: center; gap: 14px; padding: 14px 18px; background: rgba(255,255,255,0.03); border: 1px solid #1E1E1E; border-radius: 8px; }
 .cover-source-dot { width: 6px; height: 6px; background: #27C93F; border-radius: 50%; flex-shrink: 0; }
-.cover-source-text { font-size: 13px; color: #555; font-family: 'Inter', sans-serif; line-height: 1.5; }
-.cover-source-text b { color: #888; font-weight: 600; }
-.cover-meta { font-size: 11px; font-family: 'Inter', sans-serif; color: #2A2A2A; letter-spacing: 2px; text-transform: uppercase; margin-top: 28px; }
+.cover-source-text { font-size: 13px; color: #888; font-family: 'Inter', sans-serif; line-height: 1.5; }
+.cover-source-text b { color: #AAA; font-weight: 600; }
+.cover-meta { font-size: 11px; font-family: 'Inter', sans-serif; color: #555; letter-spacing: 2px; text-transform: uppercase; margin-top: 28px; }
 
 /* ── Closing slide ── */
 .s-close .content { background: #F8F8F8; padding: 64px 72px; display: flex; flex-direction: column; justify-content: center; }
@@ -253,8 +253,8 @@ body {
 .cq em { font-style: normal; font-weight: 900; border-bottom: 3px solid #000; padding-bottom: 2px; }
 .ctabox { background: #000; border-radius: 14px; padding: 32px 36px; }
 .cta-hl { font-size: 17px; font-weight: 600; color: rgba(255,255,255,0.9); margin-bottom: 14px; line-height: 1.5; }
-.cta-body { font-size: 15px; line-height: 1.75; color: rgba(255,255,255,0.52); }
-.cta-link { font-family: 'Inter', sans-serif; font-size: 12px; color: rgba(255,255,255,0.28); margin-top: 18px; letter-spacing: 1px; }
+.cta-body { font-size: 17px; line-height: 1.75; color: rgba(255,255,255,0.75); }
+.cta-link { font-family: 'Inter', sans-serif; font-size: 12px; color: rgba(255,255,255,0.5); margin-top: 18px; letter-spacing: 1px; }
 
 /* ── Photo embed ── */
 .photo-wrap { position: relative; width: 100%; border-radius: 10px; overflow: hidden; margin-bottom: 18px; flex-shrink: 0; }
@@ -389,15 +389,15 @@ node /tmp/slides-screenshot/screenshot.js "file://{html_absolute_path}" "{output
 | `.lbox` 左黑线+浅灰底 | 结构化信息的轻量呈现 |
 | footer 固定引流文案 | 每张传播都带回流 |
 | 封面深色/内容白/结语浅灰 | 视觉节奏，避免单调 |
-| Inter + Noto Sans SC | 中英混排最佳字体组合 |
+| PingFang SC + Noto Sans SC + Inter | PingFang SC 中文更清晰易读，Noto 作备用，Inter 负责数字/英文 |
+| 页尾文案不带外链 | 小红书限流外链，改用「应用商店搜索 Superlinear Academy」引导动作 |
+| Closing CTA 标题固定 | 「Superlinear Academy，AI 先行者的赛博风水宝地」，下方引导搜索 App，不贴 URL |
 
 ---
 
-## 下载
+## 安装
 
 ```bash
-curl -O https://raw.githubusercontent.com/sunyuzheng/xhs-article-slides/main/article-to-slides.md
+curl -o ~/.claude/skills/article-to-slides.md \
+  https://raw.githubusercontent.com/sunyuzheng/xhs-article-slides/main/article-to-slides.md
 ```
-
-- **Claude Code**：`mv article-to-slides.md ~/.claude/skills/` → 用 `/article-to-slides` 调用
-- **其他**：直接将文件内容作为 system prompt 粘贴到任意 LLM 对话
